@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<default-config>
+	<!-- 连接数据库的url -->
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/shop</property>
+		<!--驱动类  -->
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<!--连接数据库的账号  -->
+		<property name="user">root</property>
+		<!--连接数据库的密码  -->
+		<property name="password">1234567890zyz</property>
+		<!--初始化连接池的连接对象个数  -->
+		<property name="initialPoolSize ">10</property>
+		<!--最小连接数  -->
+		<property name="minPoolSize ">2</property>
+		<!--最大连接数  -->
+		<property name="maxPoolSize ">50</property>
+	</default-config> 
+
+	<named-config name="test">
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/shop</property>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="user">root</property>
+		<property name="password">1234567890zyz</property>
+		<property name="initialPoolSize">10</property>
+		<property name="minPoolSize">2</property>
+		<property name="maxPoolSize">50</property>
+	</named-config>
+</c3p0-config>
